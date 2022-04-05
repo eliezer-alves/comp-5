@@ -27,82 +27,51 @@
     <meta property="og:site_name" content="IFSULDEMINAS" />
     <meta property="fb:admins" content="Facebook numeric ID" />
 
-    <style>
-        .code {
-            background-color: #ddd;
-            border-radius: 3px;
-            font-family: courier, monospace;
-            padding: 0 3px;
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        header {
+            @apply w-full
         }
-        h2 {
-            margin-top: 50px;
+
+        nav {
+            @apply w-full px-8 py-4 text-white bg-gray-700
+        }
+
+        nav ul li {
+            @apply font-semibold hover:opacity-70
         }
     </style>
 </head>
 <body>
-    <div style="width: 100%;display: flex; justify-content: center; justify-items: center;">
-        <div style="width: 60%;">
-            <h1>O que é World Wide Web?</h1>
-            <h2>Essa atividade está relacionada à estrutura de páginas HTML</h2>
-            <p>
-                O primeiro website nasceu no dia 6 de agosto de 1991 no escritório do
-                engenheiro <strong>inglês Tim Berners-Lee</strong>, na época funcionário
-                do <a href="https://home.cern/" target="blank">CERN</a>, o laboratório de pesquisas atômicas da Europa.
-                Comumente confundida com a própria <strong>internet</strong>, a <strong>web</strong>
-                se tornou uma plataforma de comunicação tão importante quanto o rádio e a televisão.
-                O sistema de publicação conhecido como <strong>World Wide Web</strong>strong>, ou
-                <strong>WWW</strong>, nasceu com a ideia de que qualquer pessoa poderia compartilhar
-                conhecimento utilizando uma <strong>linguagem de publicação</strong> (HTML, HyperText Markup Language).        
-            </p>
-            <p>
-                A web foi então construída em cima da própria <strong>internet</strong>, a rede mundial que liga todos os computadores. De lá para cá,
-                grandes empresas surgiram dependendo exclusivamente dela. É o caso do gigante dos gigantes
-                <a href="https://about.google/" target="blank">Google</a> e <a href="https://www.aboutamazon.com/" target="blank">Amazon</a>.
-            </p>
-            <p>
-                Desde então, a Internet cresceu em proporções gigantescas. A quantidade de informações que está disponível no universo online é muito mais do que você poderia assimilar durante uma vida inteira. A chance de ser perder em meio à tanta informação é muito grande, por esta razão é muito importante a forma como tais informações estão dispostas. É aí que entra o hipertexto.
-            </p>
-
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <img src="./Tim-Berners-Lee.jpeg" width="640" alt="Imagem de Tim Berners Lee - criador da World Wide Web">
-            </div>
-            <br>
-            <br>
-            <q cite="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">A web evoluiu para um motor de injustiça e divisão; balanceada por poderosas forças que usam-na para seus próprios interesses(agendas).</q>
-            <br>
-            <strong>Tim Berners-Lee</strong>
-            
-            <h2>Principais métodos para manipulação de Strings PHP</h2>
-            <ul>
-                <li><code class="code">str_contains</code></li>
-                <li><code class="code">str_pad</code></li>
-                <li><code class="code">str_repeat</code></li>
-                <li><code class="code">str_replace</code></li>
+    <header>
+        <nav>
+            <ul class="flex gap-8">
+                <li>
+                    <a href="">Home</a>                    
+                </li>
+                <li>
+                    <a href="">História</a>
+                </li>
+                <li>
+                    <a href="">PC's / notebooks</a>
+                </li>
+                <li>
+                    <a href="">Celulares</a>
+                </li>
             </ul>
+        </nav>
+    </header>
 
-            <h2>Método str_replace PHP</h2>
-            <p>O método <code class="code">str_replace()</code>
-                Substitui todas as ocorrências da string de procura com a string de substituição
-            </p>
-
-            <h2>Método Foreach PHP</h2>
-            <div style="background-color: #eee;">
-                <pre>
-                    <code class="python" contentEditable="true">
-    foreach ($arr as $chave => $valor) {
-        echo "{$chave} => {$valor} ";
-        print_r($arr);
-    }
-                    </code>
-                </pre>
-            </div>
-                
-        </div>
-    </div>
-
-    <footer style="display: flex; width: 100%; justify-content: end; justify-items: end;">
-        <p>Author: Eliezer Alves</p>&emsp;
-        <p><a href="https://github.com/eliezer-alves/">meu github</a></p>
-    </footer>
+    <footer>
+        <p>by Eliezer Alves</p>
+        <p>
+            <img src="./images/icons/github.png" width="24px" alt="github icon">
+            <a href="https://github.com/eliezer-alves">eliezer-alves</a>
+        </p>
+        <p>
+            <img src="./images/icons/linkedin.png" width="24px" alt="linkedin icon">
+            <a href="https://www.linkedin.com/in/eliezer-alves-167064185/">Eliezer Alves</a>
+        </p>
+    </footer>    
 </body>
 </html>
