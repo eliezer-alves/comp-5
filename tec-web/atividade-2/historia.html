@@ -106,6 +106,15 @@
         .marc {
             @apply text-green-400 font-bold
         }
+
+        .artigo section {
+            @apply w-3/5
+        }
+
+        .external-link {
+            @apply underline decoration-green-400 italic
+            hover:text-green-400
+        }
     </style>
 </head>
 <body>
@@ -130,8 +139,13 @@
         <hr />
     </header>   
 
-    <main class="w-full min-h-[80%] flex justify-center bg-gray-900">
-        <div class="w-1/2 pt-12 px-4 flex flex-col gap-12">
+    <div class="w-full min-h-[80%] flex justify-center bg-gray-900">
+        <article class="w-1/3 pl-24 pr-12 pt-10 flex flex-col">
+            <h3 class="font-bold"><span class="marc">#</span> Atenção</h3>
+            <p class="pl-0">O conteúdo dessa página não é autoral. Essa página foi desenvolvida com o intuito puramente didático para explorar as estruturas de uma página HTML. Dessa forma, copiei todas essas informações de um site. Você pode conferir o conteúdo original <a href="https://www.tecmundo.com.br/sistema-operacional/2031-a-historia-dos-sistemas-operacionais-ilustracao-.htm" class="external-link" target="_blank" title="tecmundo | A história dos sistemas operacionais">aqui</a>.</p>
+
+        </article>
+        <main class="artigo w-2/3 py-12 pl-28 flex flex-col gap-12 shadow-lg">
             <section>
                 <h2> <span class="marc">#</span> Início de tudo</h2>
                 
@@ -349,10 +363,10 @@
                     O Linux continua em desenvolvimento constante, sendo que seu núcleo principal é atualizado para englobar novas tecnologias e melhorias. O principal destaque desse software é que ele somente evoluiu e não precisou se preocupar com interface gráfica e outros adicionais. Atualmente, o sistema está na versão 3.11.
                 </p>
             </section>
-        </div>
-        
 
-    </main>
+        </main>        
+
+    </div>
 
     <footer>
         <p>by Eliezer Alves</p>
