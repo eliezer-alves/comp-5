@@ -115,6 +115,14 @@
             @apply underline decoration-green-400 italic
             hover:text-green-400
         }
+
+        th {
+            @apply border border-slate-400 p-4
+        }
+
+        td {
+            @apply border border-slate-400 p-4 text-center
+        }
     </style>
 </head>
 <body>
@@ -194,8 +202,8 @@
                 
                 <p>
                     Nove prêmios Nobel foram concedidos por trabalhos concluídos nos Laboratórios Bell.
-                    <table>
-                        <thead>
+                    <table class="ml-8 mt-5 border border-slate-400">
+                        <thead class="border border-slate-400">
                           <tr>
                             <th>Ano</th>
                             <th>Ganhador</th>
