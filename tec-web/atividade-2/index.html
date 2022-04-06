@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icons/icon.ico">
     
     <title>IFSULDEMINAS - Tecnologias Web</title>
     <meta name="keywords" content="World Wide Web, Tecnologias Web, Ciência da Computação, IFSULDEMINAS">
@@ -30,7 +30,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         body {
-            @apply h-screen
+            @apply h-screen;
+            background-image: url('./images/bg-2.jpg');
+            font-family: 'Andale Mono', monospace sans-serif;
+
         }
         header {
             @apply w-full h-[10%] min-h-[50px]
@@ -39,7 +42,8 @@
         nav {
             @apply w-full h-full px-8
             flex items-center
-            text-white bg-gray-700;
+            text-white bg-gray-800
+            shadow-lg
         }
 
         nav ul li {
@@ -49,11 +53,46 @@
         footer {
             @apply w-full h-[10%] min-h-[50px] px-8
             flex justify-end items-center gap-4
-            text-white bg-gray-700
+            text-white bg-gray-900
         }
 
-        .content {
-            @apply min-h-[80%]
+        h1 {
+            @apply text-8xl text-white
+        }
+
+        h2 {
+            @apply text-xl text-white
+        }
+
+        /* Tailwind Derived Classes */
+        .flex-center {
+            @apply flex justify-center items-center
+        }
+
+        .flex-col-center {
+            @apply flex-center flex-col
+        }
+
+        /* My Template Classes */
+        .form-row {
+            @apply my-1 flex flex-col items-start gap-1
+            text-white font-semibold
+        }
+
+        .form-row label {
+
+        }
+
+        .form-row input {
+            @apply px-3 py-2 rounded-md bg-gray-600 text-white border border-gray-500 w-[280px]
+        }
+
+        .btn {
+            @apply py-3 px-8
+            rounded-md bg-green-400
+            text-white text-xl font-semibold
+            hover:opacity-70
+            duration-200 ease-in-out
         }
     </style>
 </head>
@@ -62,7 +101,7 @@
         <nav>
             <ul class="flex gap-8">
                 <li>
-                    <a href="">Home</a>                    
+                    <a href="" class="text-green-300">Home</a>                    
                 </li>
                 <li>
                     <a href="">História</a>
@@ -75,10 +114,36 @@
                 </li>
             </ul>
         </nav>
-    </header>
+        
+        <hr />
+    </header>   
 
-    <section class="content">
+    <section class="w-full h-[80%] flex justify-end bg-gray-900">
+        <div class="w-3/5 h-full px-8 flex-col-center text-center">
+            <h1 class="font-bold mb-16">Venha conhecer nossos serviços</h1>
+            <h2>Serviços inúteis e inexistentes para você se deliciar com o fato se serem puramente fictícios</h2>
+        </div>
+        <div class="w-2/5 h-full flex-center">
+            <div class="px-12 py-8 bg-gray-800 shadow-lg rounded-lg">
+                <form action="" class="flex flex-col gap-1">
+                    <h2 class="text-center mb-8">Solicite seu cadastro</h2>
+                    <div class="form-row">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">e-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Telefone</label>
+                        <input type="text" name="telefone">
+                    </div>
+                    <button class="btn mt-4">Salvar</button>
+                </form>
 
+            </div>
+        </div>
     </section>
 
     <footer>
