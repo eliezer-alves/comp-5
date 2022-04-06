@@ -29,16 +29,31 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
+        body {
+            @apply h-screen
+        }
         header {
-            @apply w-full
+            @apply w-full h-[10%] min-h-[50px]
         }
 
         nav {
-            @apply w-full px-8 py-4 text-white bg-gray-700
+            @apply w-full h-full px-8
+            flex items-center
+            text-white bg-gray-700;
         }
 
         nav ul li {
             @apply font-semibold hover:opacity-70
+        }
+
+        footer {
+            @apply w-full h-[10%] min-h-[50px] px-8
+            flex justify-end items-center gap-4
+            text-white bg-gray-700
+        }
+
+        .content {
+            @apply min-h-[80%]
         }
     </style>
 </head>
@@ -62,16 +77,20 @@
         </nav>
     </header>
 
+    <section class="content">
+
+    </section>
+
     <footer>
         <p>by Eliezer Alves</p>
-        <p>
-            <img src="./images/icons/github.png" width="24px" alt="github icon">
-            <a href="https://github.com/eliezer-alves">eliezer-alves</a>
-        </p>
-        <p>
+            
+        <a href="https://github.com/eliezer-alves">
+            <img src="./images/icons/github.png" width="24px" alt="github icon" class="rounded-sm">
+        </a>
+
+        <a href="https://www.linkedin.com/in/eliezer-alves-167064185/">
             <img src="./images/icons/linkedin.png" width="24px" alt="linkedin icon">
-            <a href="https://www.linkedin.com/in/eliezer-alves-167064185/">Eliezer Alves</a>
-        </p>
+        </a>
     </footer>    
 </body>
 </html>
