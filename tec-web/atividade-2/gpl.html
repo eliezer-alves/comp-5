@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./images/icons/icon.ico">
     
-    <title>SO | Home</title>
+    <title>SO | Bell Labs</title>
     <meta name="keywords" content="World Wide Web, Tecnologias Web, Ciência da Computação, IFSULDEMINAS">
     <meta name="description" content="Tecnologias Web - história World Wide Web"></head>
     <meta name="description" content="Página simples desenvolvida para a atividade da disciplina Tecnologias Web do curso Bacharel em Ciência da Computação - IFSULDEMINAS!"></head>
@@ -60,8 +60,16 @@
             @apply text-8xl
         }
 
+        h2 {
+            @apply text-4xl
+        }
+
         h3 {
             @apply text-xl
+        }
+        
+        p {
+            @apply mt-2 pl-8
         }
 
         /* Tailwind Derived Classes */
@@ -94,6 +102,27 @@
             hover:opacity-70
             duration-200 ease-in-out
         }
+
+        .marc {
+            @apply text-green-400 font-bold
+        }
+
+        .artigo section {
+            @apply w-3/5
+        }
+
+        .external-link {
+            @apply underline decoration-green-400 italic
+            hover:text-green-400
+        }
+
+        th {
+            @apply border border-slate-400 p-4
+        }
+
+        td {
+            @apply border border-slate-400 p-4 text-center
+        }
     </style>
 </head>
 <body>
@@ -104,7 +133,7 @@
                     <img src="./images/icons/icon.ico" width="28px" alt="ícone da página">
                 </li>
                 <li>
-                    <a href="index.html" class="text-green-300">Home</a>                    
+                    <a href="index.html">Home</a>                    
                 </li>
                 <li>
                     <a href="historia.html">História</a>
@@ -113,7 +142,7 @@
                     <a href="bell_labs.html">Bell Labs</a>
                 </li>
                 <li>
-                    <a href="gpl.html">GPL</a>
+                    <a href="gpl.html" class="text-green-300">GPL</a>
                 </li>
             </ul>
         </nav>
@@ -121,33 +150,56 @@
         <hr />
     </header>   
 
-    <section class="w-full h-[80%] flex justify-end bg-gray-900">
-        <div class="w-3/5 h-full px-8 flex-col-center text-center">
-            <h1 class="font-bold mb-16">Venha conhecer nossos serviços</h1>
-            <h3>Serviços inúteis e inexistentes para você se deliciar com o fato se serem puramente fictícios</h3>
-        </div>
-        <div class="w-2/5 h-full flex-center">
-            <div class="px-12 py-8 bg-gray-800 shadow-lg rounded-lg">
-                <form action="" class="flex flex-col gap-1">
-                    <h3 class="text-center mb-8">Solicite seu cadastro</h3>
-                    <div class="form-row">
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="name">e-mail</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="name">Telefone</label>
-                        <input type="text" name="telefone">
-                    </div>
-                    <button class="btn mt-4">Salvar</button>
-                </form>
+    <div class="w-full min-h-[80%] flex justify-center bg-gray-900">
+        
+        <section class="w-1/3 pl-24 pr-12 pt-10 flex flex-col gap-8">            
+            <aside>
+                <h3 class="font-bold"><span class="marc">#</span> Atenção</h3>
+                <p class="pl-0">
+                        O conteúdo dessa página não é autoral. Essa página foi desenvolvida com o intuito puramente didático para explorar as estruturas de uma página HTML. Dessa forma, copiei todas essas informações de um site. Você pode conferir o conteúdo original <a href="https://pt.wikipedia.org/wiki/GNU_General_Public_License" class="external-link" target="_blank" title="Wikipedia | GNU General Public License">aqui</a>.
+                </p>
+            </aside>
 
-            </div>
-        </div>
-    </section>
+            <article>
+                <blockquote cite="https://www.kernel.org/doc/html/v4.18/process/license-rules.html">
+                    <h3 class="font-bold"><span class="marc">#</span> Regras de licenciamento do kernel Linux</h3>
+                    <p class="pl-0">
+                        O Kernel Linux é fornecido apenas sob os termos da GNU General Public License versão 2 (GPL-2.0), conforme fornecido em LICENSES/preferred/GPL-2.0, com uma exceção de syscall explícita descrita em LICENSES/exceptions/Linux-syscall-note , conforme descrito no arquivo COPYING.
+                    </p>
+                </blockquote>
+            </article>
+        </section>
+        <main class="artigo w-2/3 py-12 pl-28 flex flex-col gap-12 shadow-lg">
+            <section>
+                <h2> <span class="marc">#</span> GNU General Public License</h2>
+                <img class="ml-8 mt-8 mb-4" src="./images/GPLv3_Logo.png" alt="logo GPL">
+
+                <p>
+                    GNU General Public License (Licença Pública Geral GNU), GNU GPL ou simplesmente GPL, é a designação da licença de software para software idealizada por Richard Matthew Stallman em 1989, no âmbito do projeto GNU da Free Software Foundation (FSF). Richard Stallman originalmente criou a licença para o Projeto GNU de acordo com as definições de software livre da Free Software Foundation.
+                </p>
+                <p>
+                    Sendo uma licença copyleft, trabalhos derivados de um produto originalmente licenciado pela GPL só podem ser distribuídos se utilizarem a mesma licença. Isso é diferente das licenças permissivas como a licença BSD e a licença MIT, que possuem exigências mais simples.
+                </p>
+                <p>
+                    Historicamente, as licenças GPL são utilizadas por projetos de software livre e de código aberto. Além dos programas de software produzidos pelo Projeto GNU, o núcleo Linux é um exemplo de usuário da licença, que utiliza a versão 2 da GPL.
+                </p>
+            </section>
+
+            <section>
+                <h2> <span class="marc mb-8">#</span> PDF da Licença (tag embed)</h2>
+                <br>
+                <embed src="./files/gpl-2.0.pt-br.pdf" type="application/pdf" width="100%" height="300px" />
+            </section>
+
+            <section>
+                <h2> <span class="marc mb-8">#</span> PDF da Licença (tag iframe)</h2>
+                <br>
+                <iframe src="./files/gpl-2.0.pt-br.pdf" width="100%" height="300px"></iframe>
+            </section>
+
+        </main>        
+
+    </div>
 
     <footer>
         <p>by Eliezer Alves</p>
