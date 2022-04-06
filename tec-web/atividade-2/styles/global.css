@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen;
+  background-image: url('./images/bg-2.jpg');
+  font-family: 'Andale Mono', monospace sans-serif;
+
+}
+header {
+  @apply w-full h-[10%] min-h-[50px]
+}
+
+nav {
+  @apply w-full h-full px-8
+  flex items-center
+  text-white bg-gray-800
+  shadow-lg
+}
+
+nav ul li {
+  @apply font-semibold hover:opacity-70
+}
+
+footer {
+  @apply w-full h-[10%] min-h-[50px] px-8
+  flex justify-end items-center gap-4
+  text-white bg-gray-900
+}
+
+h1 {
+  @apply text-8xl text-white
+}
+
+h3 {
+  @apply text-xl text-white
+}
+
+/* Tailwind Derived Classes */
+.flex-center {
+  @apply flex justify-center items-center
+}
+
+.flex-col-center {
+  @apply flex-center flex-col
+}
+
+/* My Template Classes */
+.form-row {
+  @apply my-1 flex flex-col items-start gap-1
+  text-white font-semibold
+}
+
+.form-row label {
+
+}
+
+.form-row input {
+  @apply px-3 py-2 rounded-md bg-gray-600 text-white border border-gray-500 w-[280px]
+}
+
+.btn {
+  @apply py-3 px-8
+  rounded-md bg-green-400
+  text-white text-xl font-semibold
+  hover:opacity-70
+  duration-200 ease-in-out
+}

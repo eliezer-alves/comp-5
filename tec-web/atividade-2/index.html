@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./images/icons/icon.ico">
     
-    <title>IFSULDEMINAS - Tecnologias Web</title>
+    <title>SO | Home</title>
     <meta name="keywords" content="World Wide Web, Tecnologias Web, Ciência da Computação, IFSULDEMINAS">
     <meta name="description" content="Tecnologias Web - história World Wide Web"></head>
     <meta name="description" content="Página simples desenvolvida para a atividade da disciplina Tecnologias Web do curso Bacharel em Ciência da Computação - IFSULDEMINAS!"></head>
@@ -30,7 +30,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         body {
-            @apply h-screen;
+            @apply h-screen text-white;
             background-image: url('./images/bg-2.jpg');
             font-family: 'Andale Mono', monospace sans-serif;
 
@@ -42,7 +42,7 @@
         nav {
             @apply w-full h-full px-8
             flex items-center
-            text-white bg-gray-800
+            bg-gray-800
             shadow-lg
         }
 
@@ -53,15 +53,15 @@
         footer {
             @apply w-full h-[10%] min-h-[50px] px-8
             flex justify-end items-center gap-4
-            text-white bg-gray-900
+            bg-gray-900
         }
 
         h1 {
-            @apply text-8xl text-white
+            @apply text-8xl
         }
 
-        h2 {
-            @apply text-xl text-white
+        h3 {
+            @apply text-xl
         }
 
         /* Tailwind Derived Classes */
@@ -76,7 +76,7 @@
         /* My Template Classes */
         .form-row {
             @apply my-1 flex flex-col items-start gap-1
-            text-white font-semibold
+            font-semibold
         }
 
         .form-row label {
@@ -84,13 +84,13 @@
         }
 
         .form-row input {
-            @apply px-3 py-2 rounded-md bg-gray-600 text-white border border-gray-500 w-[280px]
+            @apply px-3 py-2 rounded-md bg-gray-600 border border-gray-500 w-[280px]
         }
 
         .btn {
             @apply py-3 px-8
             rounded-md bg-green-400
-            text-white text-xl font-semibold
+            text-xl font-semibold
             hover:opacity-70
             duration-200 ease-in-out
         }
@@ -101,10 +101,10 @@
         <nav>
             <ul class="flex gap-8">
                 <li>
-                    <a href="" class="text-green-300">Home</a>                    
+                    <a href="index.html" class="text-green-300">Home</a>                    
                 </li>
                 <li>
-                    <a href="">História</a>
+                    <a href="historia.html">História</a>
                 </li>
                 <li>
                     <a href="">PC's / notebooks</a>
@@ -121,12 +121,12 @@
     <section class="w-full h-[80%] flex justify-end bg-gray-900">
         <div class="w-3/5 h-full px-8 flex-col-center text-center">
             <h1 class="font-bold mb-16">Venha conhecer nossos serviços</h1>
-            <h2>Serviços inúteis e inexistentes para você se deliciar com o fato se serem puramente fictícios</h2>
+            <h3>Serviços inúteis e inexistentes para você se deliciar com o fato se serem puramente fictícios</h3>
         </div>
         <div class="w-2/5 h-full flex-center">
             <div class="px-12 py-8 bg-gray-800 shadow-lg rounded-lg">
                 <form action="" class="flex flex-col gap-1">
-                    <h2 class="text-center mb-8">Solicite seu cadastro</h2>
+                    <h3 class="text-center mb-8">Solicite seu cadastro</h3>
                     <div class="form-row">
                         <label for="name">Nome</label>
                         <input type="text" name="name" required>
