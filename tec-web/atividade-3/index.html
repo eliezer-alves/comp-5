@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icons/icon.ico">
+
+    <title>SO | Home</title>
+    <meta name="keywords" content="World Wide Web, Tecnologias Web, Ciência da Computação, IFSULDEMINAS">
+    <meta name="description" content="Tecnologias Web - história World Wide Web">
+</head>
+<meta name="description"
+    content="Página simples desenvolvida para a atividade da disciplina Tecnologias Web do curso Bacharel em Ciência da Computação - IFSULDEMINAS!">
+</head>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="Conta do Twitter do site (incluindo arroba)">
+<meta name="twitter:title" content="IFSULDEMINAS - Tecnologias Web">
+<meta name="twitter:description"
+    content="Página simples desenvolvida para a atividade da disciplina Tecnologias Web do curso Bacharel em Ciência da Computação - IFSULDEMINAS!">
+<meta name="twitter:creator" content="@ELIEZER">
+<!-- imagens para o Twitter Summary Card precisam ter pelo menos 200×200 px -->
+<!-- para o sistema Open Graph -->
+<meta name="twitter:image" content="http://www.example.com/image.jpg">
+<meta property="og:title" content="IFSULDEMINAS - Tecnologias Web" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/" />
+<meta property="og:image" content="http://example.com/image.jpg" />
+<meta property="og:description"
+    content="Página simples desenvolvida para a atividade da disciplina Tecnologias Web do curso Bacharel em Ciência da Computação - IFSULDEMINAS!" />
+<meta property="og:site_name" content="IFSULDEMINAS" />
+<meta property="fb:admins" content="Facebook numeric ID" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style type="text/tailwindcss">
+    body {
+            @apply h-screen text-white;
+            background-image: url('./images/bg-2.jpg');
+            font-family: 'Andale Mono', monospace sans-serif;
+
+        }
+        header {
+            @apply w-full h-[10%] min-h-[50px]
+        }
+
+        nav {
+            @apply w-full h-full px-8            
+            bg-gray-800
+            shadow-lg;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            @apply font-semibold hover:opacity-70
+        }
+
+        footer {
+            @apply w-full h-[10%] min-h-[50px] px-8
+            bg-gray-900;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h1 {
+            @apply text-8xl
+        }
+
+        h3 {
+            @apply text-xl
+        }
+
+        /* Tailwind Derived Classes */
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-col-center {
+            @apply flex-center;
+            flex-direction: column;
+        }
+
+        /* My Template Classes */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+        .form-row {
+            @apply my-1 flex flex-col items-start gap-1
+            font-semibold
+        }
+
+        .form-row input {
+            @apply px-3 py-2 rounded-md bg-gray-600 border border-gray-500 w-[280px]
+        }
+
+        .btn {
+            @apply py-3 px-8
+            rounded-md bg-green-400
+            text-xl font-semibold
+            hover:opacity-70
+            duration-200 ease-in-out
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="flex gap-8">
+                <li>
+                    <img src="./images/icons/icon.ico" width="28px" alt="ícone da página">
+                </li>
+                <li>
+                    <a href="index.html" class="text-green-300">Home</a>
+                </li>
+                <li>
+                    <a href="historia.html">História</a>
+                </li>
+                <li>
+                    <a href="bell_labs.html">Bell Labs</a>
+                </li>
+                <li>
+                    <a href="gpl.html">GPL</a>
+                </li>
+                <li>
+                    <a href="imagem.html">Imagem</a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr />
+    </header>
+
+    <section class="w-full h-[80%] bg-gray-900 grid-container">
+        <div class="h-full px-8 flex-col-center text-center">
+            <h1 class="font-bold mb-16">Venha conhecer nossos serviços</h1>
+            <h3>Serviços inúteis e inexistentes para você se deliciar com o fato se serem puramente fictícios</h3>
+        </div>
+        <div class="h-full flex-center">
+            <div class="px-12 py-8 bg-gray-800 shadow-lg rounded-lg">
+                <form action="" class="flex flex-col gap-1">
+                    <h3 class="text-center mb-8">Solicite seu cadastro</h3>
+                    <div class="form-row">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">e-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Telefone</label>
+                        <input type="text" name="telefone">
+                    </div>
+                    <button class="btn mt-4">Salvar</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>by Eliezer Alves</p>
+
+        <a href="https://github.com/eliezer-alves">
+            <img src="./images/icons/github.png" width="24px" alt="github icon" class="rounded-sm">
+        </a>
+
+        <a href="https://www.linkedin.com/in/eliezer-alves-167064185/">
+            <img src="./images/icons/linkedin.png" width="24px" alt="linkedin icon">
+        </a>
+    </footer>
+</body>
+
+</html>
