@@ -74,6 +74,18 @@
             @apply text-xl
         }
 
+        input {
+            @apply font-semibold;
+        }
+
+        input:valid {
+            @apply text-green-300
+        }
+
+        input:invalid {
+            @apply text-rose-300
+        }
+
         /* Tailwind Derived Classes */
         .flex-center {
             display: flex;
@@ -150,15 +162,15 @@
                     <h3 class="text-center mb-8">Solicite seu cadastro</h3>
                     <div class="form-row">
                         <label for="name">Nome</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" minlength="2" required>
                     </div>
                     <div class="form-row">
                         <label for="name">e-mail</label>
                         <input type="email" name="email" required>
                     </div>
                     <div class="form-row">
-                        <label for="name">Telefone</label>
-                        <input type="text" name="telefone">
+                        <label for="name">Celular</label>
+                        <input type="text" name="celular" minlength="11">
                     </div>
                     <button class="btn mt-4">Salvar</button>
                 </form>
